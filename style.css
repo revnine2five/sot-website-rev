@@ -1,0 +1,1194 @@
+/* body and universal styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: navajowhite;
+  font-family: "Poppins";
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+@font-face {
+  font-family: jumper-bold;
+  src: url(assets/Jumper\ Bold.ttf);
+}
+
+@font-face {
+  font-family: jumper-bold-italic;
+  src: url(assets/Jumper\ Bold\ Italic.ttf);
+}
+
+@font-face {
+  font-family: jumper-reguler;
+  src: url(assets/Jumper\ Reguler.ttf);
+}
+
+@font-face {
+  font-family: jumper-reguler-italic;
+  src: url(assets/Jumper\ Reguler\ Italic.ttf);
+}
+/* for navbar styling */
+header {
+  background-color: #d9d9d9;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  transition: 0.5s;
+}
+
+.navbar-flex {
+  /* background-color: #d9d9d9; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto 10%;
+}
+
+.navbar-left,
+.navbar-right {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-logo {
+  margin: 0;
+  padding: 0;
+  font-family: jumper-bold-italic;
+}
+
+.or {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: smaller;
+}
+.navbar-menu {
+  transition: 0.5s;
+  margin: auto 5px;
+  cursor: pointer;
+}
+
+.navbar-menu:hover {
+  border-bottom: 2px solid black;
+  font-weight: 600;
+}
+.navbar-mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 10%;
+}
+
+/* navbar styling end */
+
+/* this is styling for jumbotron */
+#jumbotron {
+  margin: auto 10%;
+}
+
+.background-white-jumbotron {
+  background-color: white;
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+
+.background-white {
+  padding-top: 5%;
+  background-color: white;
+  padding-bottom: 5%;
+}
+.jumbotron-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jumbotron-title {
+  margin: 0;
+  font-family: jumper-bold;
+  margin-bottom: 20px;
+  font-size: 3vw;
+}
+
+.jumbotron-title-two {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: jumper-bold-italic;
+  font-size: 2vw;
+}
+
+.jumbotron-button {
+  width: 50%;
+  padding: 15px 25px;
+  font-family: jumper-reguler-italic;
+  font-size: 1.5vw;
+  border: 2px solid black;
+  transition: 0.5s;
+  color: black;
+}
+
+.jumbotron-button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05);
+}
+.jumbotron-container-left {
+  width: 45%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.jumbotron-container-right {
+  width: 55%;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron-image {
+  width: 100%;
+}
+
+/* end of styling jumbotron */
+/* styling for image slider  */
+#image-slider-section {
+  margin: auto 10%;
+  display: block;
+}
+
+.image-slider {
+  position: relative;
+  margin-bottom: 10%;
+}
+.slide {
+  position: absolute;
+  border-radius: 20px;
+}
+
+.slide {
+  clip-path: circle(0% at 100% 50%);
+}
+
+.slide.active {
+  clip-path: circle(150% at 100% 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.slider-image {
+  border-radius: 20px;
+  width: 100%;
+}
+
+/* end styling for image slider */
+
+#bridge-one {
+  margin-top: 45%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.bridge-title {
+  font-size: 2vw;
+}
+
+.bridge-paragraph {
+  font-size: 1.4vw;
+  font-style: italic;
+}
+.bridge-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.bridge-child-flex {
+  width: 30%;
+  min-width: 200px;
+}
+
+.background {
+  background-color: navajowhite;
+}
+
+/* end styling for bridge */
+
+/* local product styling */
+.indonesian-flag {
+  width: 3.5vw;
+  border: 2px solid black;
+  margin-left: 10px;
+}
+
+#local-product {
+  margin: auto 10%;
+}
+
+.local-product-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.local-product-span {
+  font-weight: bold;
+}
+.local-product-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+}
+.local-product-margin {
+  margin-right: 20px;
+}
+.local-product-right {
+  min-width: 300px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.local-product-image {
+  width: 100%;
+}
+
+.local-product-title {
+  font-family: jumper-bold;
+  font-size: 3vw;
+}
+
+.local-product-paragraph {
+  font-size: 1.4vw;
+}
+
+/* local product styling end */
+
+/* faq styling */
+#faq {
+  margin: auto 10%;
+  padding-bottom: 8%;
+}
+.faq-container-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.faq-title {
+  font-size: 3vw;
+  font-family: jumper-bold;
+  text-transform: uppercase;
+}
+
+.faq-paragraph {
+  font-size: 1.4vw;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+.faq-container-child-start {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.faq-container-child-end {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* 
+faq styling end */
+
+/* for big bridge image */
+#bridge-two {
+  height: 60vw;
+  background-image: url(assets/grailify-9X9gq92Ypyc-unsplash.jpg);
+  background-size: 100%;
+}
+
+/* end for bridge images  */
+
+/* catch up styling */
+#catch-up {
+  margin: auto 10%;
+  height: 30vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.catch-up-title {
+  text-align: center;
+  font-family: jumper-bold;
+  font-size: 3vw;
+  letter-spacing: 5px;
+  margin: 4px auto;
+}
+
+.catch-up-subtitle {
+  font-family: jumper-reguler-italic;
+  font-size: 2.5vw;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.catch-up-button-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.catch-up-button {
+  width: 100%;
+  padding: 15px 50px;
+  font-family: jumper-reguler-italic;
+  font-size: 1.5vw;
+  transition: 0.5s;
+  color: black;
+  border: 2px solid black;
+}
+
+.catch-up-button:hover {
+  color: white;
+  background-color: black;
+  transform: scale(1.05);
+  /* border: none; */
+}
+/* catch up stlying end  */
+
+/* footer */
+#footer {
+  margin: auto 10%;
+}
+.main-footer {
+  text-align: center;
+}
+
+.footer-background {
+  background-color: #d9d9d9;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.footer-paragraph {
+  margin: 0;
+  font-family: jumper-reguler;
+  font-size: 1.5vw;
+}
+
+.icon-footer {
+  color: black;
+  font-size: 3.3vw;
+  margin: 10px 5px;
+}
+
+.footer-line {
+  height: 4px;
+  border: none;
+  background-color: black;
+}
+/* end of footer styling  */
+
+/* ####
+THIS IS FOR STYLING SHOP */
+#shop-title {
+  margin: auto 10%;
+}
+
+.shop-nav,
+.inline-nav {
+  margin: auto 5px;
+  font-style: italic;
+  transition: 0.5s;
+  font-family: jumper-reguler-italic;
+}
+.inline-nav:hover {
+  text-decoration: underline;
+}
+.shop-nav:hover {
+  text-decoration: underline;
+}
+.shop-main-title,
+.about-title {
+  text-align: center;
+  font-family: jumper-bold;
+  font-size: 3vw;
+}
+.shop-horizontal,
+.inline-horizontal {
+  background-color: black;
+  height: 3px;
+}
+#shop-container {
+  margin: auto 10%;
+  display: flex;
+  justify-content: center;
+}
+.product-image {
+  width: 100%;
+}
+.shop-container-menu {
+  width: 15%;
+  /* margin-right: 20px; */
+  margin-bottom: 20px;
+  background-color: #d9d9d9;
+  padding: 15px;
+  cursor: pointer;
+  min-width: 150px;
+  transition: 0.3s;
+  margin: 10px;
+  border-top: 10px solid black;
+}
+
+.shop-container-flex {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.product-title {
+  font-family: "Poppins";
+}
+
+.product-title:hover {
+  text-decoration: underline;
+}
+.product-price {
+  font-style: italic;
+}
+.shop-container-menu:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 20px black;
+}
+/* THIS IS STYLING FOR CONTACT PAGES */
+@media only screen and (max-width: 800px) and (min-width: 601px) {
+  #contact {
+    padding-top: 5%;
+  }
+
+  .about {
+    padding-top: 10%;
+  }
+
+  .about-div {
+    padding-top: 5%;
+  }
+  .shop {
+    padding-top: 10%;
+  }
+}
+
+#contact {
+  background-image: url(assets/nicolas-hoizey-Lno6-CxVXgo-unsplash.jpg);
+  background-size: cover;
+}
+.contact-main-container {
+  height: 60vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto 10%;
+}
+
+.form-title {
+  font-family: jumper-reguler;
+  font-size: 2vw;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+}
+.submit-button {
+  width: 50%;
+  background-color: #d9d9d9;
+  font-size: 1.1vw;
+  height: 40px;
+  font-family: jumper-reguler;
+  margin-top: 10px;
+  transition: 0.3s;
+  color: black;
+}
+
+.submit-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.contact-box {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  border-top: 10px solid black;
+  border-radius: 15px;
+  width: 35%;
+  height: auto;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 230px;
+  box-shadow: 0px 0px 30px black;
+}
+
+.input-container,
+.textarea-container {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+label {
+  font-size: 1.2vw;
+  margin: 2px auto;
+}
+input {
+  height: 30px;
+  outline: none;
+}
+textarea {
+  height: 50px;
+  outline: none;
+}
+input,
+textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  font-family: "Poppins";
+}
+
+.maps-main-container {
+  margin: auto 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.maps-container {
+  width: 50%;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  transition: 0.3s;
+  border: 2px solid #d9d9d9;
+  border-top: 10px solid black;
+  box-shadow: 0px 0px 20px black;
+}
+
+.maps-child-container {
+  display: flex;
+  padding-right: 5%;
+  padding-left: 5%;
+  justify-content: flex-start;
+  height: 46%;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  align-items: center;
+  transition: 0.3s;
+  border: 2px solid #d9d9d9;
+  border-top: 10px solid black;
+  box-shadow: 0px 0px 20px black;
+}
+
+.maps-textbox {
+  min-width: 100px;
+}
+.maps-container-right {
+  height: 440px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.contact-icon {
+  font-size: 5vw;
+  margin-right: 10px;
+}
+
+.iframe-maps {
+  width: 80%;
+  height: 75%;
+  border: 10px solid black;
+  border-radius: 15px;
+}
+
+.maps-whatsapp,
+.maps-email,
+.maps-whatsapp-anchor {
+  font-size: 1.2vw;
+}
+.maps-email,
+.maps-whatsapp {
+  margin: 0;
+}
+.maps-whatsapp:hover {
+  text-decoration: underline;
+}
+
+h3.maps-email:hover {
+  text-decoration: underline;
+}
+.maps-container:hover {
+  border: 2px solid black;
+  border-top: 10px solid black;
+}
+
+.maps-child-container:hover {
+  border: 2px solid black;
+  border-top: 10px solid black;
+}
+.maps-title {
+  font-family: jumper-reguler;
+}
+
+/* END FOR CONTACT PAGES STYLING */
+
+/* THIS IS START FOR STYLING ABOUT */
+.about-main-container {
+  margin: auto 10%;
+}
+.about-div {
+  padding-top: 5%;
+}
+
+.padding-bottom-off {
+  padding-bottom: 2%;
+}
+.margin-off {
+  margin: 0 10%;
+}
+
+.about-image-1 {
+  width: 100%;
+}
+
+.about-motto {
+  font-family: jumper-reguler-italic;
+  font-size: 2vw;
+}
+
+.about-container-1-title,
+.about-container-2-title {
+  font-family: jumper-reguler;
+}
+
+.about-container-2-title {
+  font-size: 1.5vw;
+}
+.about-container-1-title {
+  font-size: 3vw;
+}
+.about-motto,
+.about-title {
+  text-align: center;
+}
+
+.about-title {
+  margin-bottom: 0;
+}
+
+.about-container-1 {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.about-motto-2 {
+  padding-top: 10%;
+  margin: 0;
+  padding-bottom: 10%;
+  font-family: jumper-reguler-italic;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 3.5vw;
+}
+.about-container-1-child {
+  width: 50%;
+}
+.about-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container-2-child {
+  width: 45%;
+  min-width: 400px;
+  margin-right: 30px;
+}
+.about-container-2-image {
+  width: 100%;
+}
+
+.check {
+  transition: 0.5s;
+}
+.about-us-paragraph {
+  font-size: 1.3vw;
+}
+.about-container-3 {
+  width: 100%;
+  background-color: black;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container-4 {
+  width: 100%;
+  background-color: black;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+  margin: 0;
+  /* display: flex;
+  justify-content: center; */
+}
+.about-logo {
+  width: 80%;
+}
+/* for modal styling */
+
+.modal-container-menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.546);
+  transition: visibility 1s, opacity 1s;
+}
+
+.modal-menu {
+  text-align: left;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  visibility: hidden;
+  padding: 10px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.modal-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.546);
+  transition: visibility 1s, opacity 1s;
+}
+
+.modal-image-container {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.modal-image {
+  width: 100%;
+}
+
+.modal-parent {
+  width: 60%;
+  min-width: 300px;
+  visibility: hidden;
+  position: absolute;
+  margin-top: 3%;
+}
+.modal {
+  display: flex;
+  width: auto;
+  padding: 30px;
+  height: auto;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.modal-text {
+  width: 45%;
+}
+
+.modal-box-title {
+  font-size: 1.4vw;
+  margin-top: 0;
+}
+
+.modal-box-price,
+.modal-box-size-title,
+.modal-box-color,
+.modal-box-description {
+  font-size: 1.1vw;
+}
+
+.modal-box-description {
+  overflow: auto;
+  height: 150px;
+}
+.size-button {
+  width: 10%;
+  min-width: 25px;
+  font-size: 1.1vw;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.modal-buy-button {
+  background-color: transparent;
+  padding: 5px;
+  width: 40%;
+  border: 1px solid black;
+  font-family: "Poppins";
+  font-size: 1.1vw;
+  cursor: pointer;
+  color: black;
+  transition: 0.5s;
+}
+
+.modal-buy-button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .modal-menu {
+    padding-top: 35%;
+  }
+  .background-white {
+    padding-top: 10%;
+  }
+  .background-white-jumbotron {
+    padding-top: 20%;
+  }
+  .jumbotron-title-two {
+    font-size: 20px;
+  }
+  .jumbotron-button {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .jumbotron-title,
+  .faq-title,
+  .catch-up-title,
+  .local-product-title,
+  .catch-up-subtitle,
+  .shop-main-title,
+  .about-title {
+    font-family: jumper-reguler;
+  }
+
+  .jumbotron-title-two,
+  .navbar-logo {
+    font-family: jumper-reguler-italic;
+  }
+  .jumbotron-title {
+    font-size: 30px;
+  }
+
+  .jumbotron-container-left {
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron-container-left,
+  .jumbotron-container-right {
+    text-align: center;
+    width: 100%;
+  }
+
+  .bridge-title {
+    font-size: 20px;
+  }
+  .bridge-paragraph {
+    font-size: 16px;
+  }
+  .bridge-flex {
+    justify-content: center;
+  }
+
+  .bridge-child-flex {
+    margin-right: 0px;
+    position: relative;
+    left: 8px;
+    width: 100%;
+  }
+
+  .local-product-title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .indonesian-flag {
+    width: 25px;
+  }
+  .local-product-paragraph {
+    font-size: 16px;
+    text-align: center;
+  }
+  .faq-title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .faq-paragraph {
+    font-size: 16px;
+  }
+  .faq-container-child-end,
+  .faq-container-child-start {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .catch-up-title {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+  .catch-up-subtitle {
+    font-size: 20px;
+  }
+  #catch-up {
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .catch-up-button {
+    font-size: 14px;
+  }
+
+  .footer-paragraph,
+  .footer-copyright {
+    font-size: 14px;
+  }
+
+  .icon-footer {
+    font-size: 30px;
+  }
+
+  .modal-image-container {
+    min-width: 200px;
+    margin-right: 0;
+  }
+
+  .modal-image {
+    border-radius: 15px;
+  }
+
+  .modal {
+    overflow: auto;
+  }
+  .modal-text {
+    margin: 10px;
+    min-width: 230px;
+    font-size: 90%;
+  }
+  .modal-buy-button {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+  .modal-box-description {
+    overflow: visible;
+    height: auto;
+  }
+  .modal {
+    padding: 25px;
+    position: relative;
+    top: 15px;
+    max-height: 350px;
+  }
+  .shop-nav {
+    font-size: 14px;
+  }
+  .shop-container-flex {
+    justify-content: center;
+  }
+
+  .shop-container-menu {
+    width: 80%;
+  }
+  .shop-main-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .size-button {
+    font-size: 10px;
+  }
+  .modal-box-title {
+    font-size: 16px;
+  }
+  .modal-box-price,
+  .modal-box-size-title,
+  .modal-box-color,
+  .modal-box-description {
+    font-size: 12px;
+  }
+
+  .product-title {
+    font-size: 16px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+  h1 {
+    margin-bottom: 5px;
+  }
+  .navbar-flex {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+  }
+
+  .navbar-logo-mobile {
+    padding: 0;
+    margin-top: 20px;
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+  .navbar-menu-mobile {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .contact-main-container {
+    height: auto;
+    justify-content: center;
+  }
+
+  .contact-box {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .maps-main-container {
+    flex-wrap: wrap;
+  }
+
+  .maps-container {
+    min-width: 300px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .maps-container-right {
+    min-width: 300px;
+    margin: 0;
+  }
+  .contact-icon {
+    font-size: 50px;
+  }
+  .maps-email,
+  .maps-whatsapp,
+  .maps-whatsapp-anchor {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  #contact {
+    padding-top: 8%;
+  }
+  .form-title {
+    font-size: 20px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+  }
+  .about {
+    padding-top: 15%;
+  }
+  .about-container-2-child {
+    min-width: 300px;
+    margin: 0;
+  }
+
+  .about-container-1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .about-container-1-child {
+    min-width: 300px;
+  }
+
+  .about-container-1 {
+    flex-wrap: wrap;
+  }
+  .about-title {
+    font-size: 26px;
+  }
+
+  .about-motto {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .about-container-1-title {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .about-us-paragraph {
+    font-size: 16px;
+  }
+
+  .about-container-2-title {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .about-motto-2 {
+    font-size: 23.9px;
+  }
+  .shop {
+    padding-top: 15%;
+  }
+}
